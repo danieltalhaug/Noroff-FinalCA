@@ -16,8 +16,12 @@ export default {
 </script>
 
 <style lang="scss">
+// Variables
 
+// SCSS
 #app {
  
 }
+
+
 </style>
