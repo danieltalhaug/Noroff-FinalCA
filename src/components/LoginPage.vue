@@ -81,9 +81,6 @@ $grey: #ced4da;
 $border-radius: 5px;
 $error-red: #ff5b5b;
 // SCSS
-  body {
-    background-color: #eee;
-  }
   .row-height {
     padding-top: 200px;
   }

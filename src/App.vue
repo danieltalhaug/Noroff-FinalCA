@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <LoginPage/>
+    <HomePage />
   </div>
 </template>
 
 <script>
 import LoginPage from './components/LoginPage.vue'
+import HomePage from './components/HomePage.vue'
 
 export default {
   name: 'app',
   components: {
-    LoginPage
+    LoginPage,
+    HomePage
   }
 }
 </script>
@@ -19,9 +21,9 @@ export default {
 // Variables
 
 // SCSS
-#app {
- 
-}
+body {
+    background-color: #eee;
+  }
 
 
 </style>
