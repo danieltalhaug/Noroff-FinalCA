@@ -16,8 +16,8 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><router-link to="/about">About</router-link></li>
+                    <li><router-link to="/contact">Contact</router-link></li>
                 </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -69,31 +69,12 @@ section{
 .navbar-default .navbar-nav>li>a{
     color: white;
 }
-h3{
-    width: 100%;
-    background-color: rgba(58, 153, 205, 0.7);
-    color: white;
-    padding: 10px;
-    font-weight: bold;
-    margin: 0px;
-    cursor: pointer;
-}
 input[type="text"]{
     width: 100%;
     border: solid 1px lightgrey;
     height: 45px;
     padding: 10px;
     outline: none;
-}
-button{
-    height: 45px;
-    background-color: #3a99cd;
-    color: #ffffff;
-    border: none;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    font-size: 20px
 }
 .m-t-30{
     margin-top: 30px;
@@ -114,19 +95,6 @@ button{
 .card-container:hover{
         box-shadow: 5px 5px 2.5px #888888;
         cursor: pointer;
-}
-.btn-success{
-    background-color: #3a99cd;
-    width: 100%;
-    border-radius: 0px;
-    border: none;
-    margin-top: 30px;
-    padding: 15px;
-    font-size: 19px;
-    font-weight: bold;
-}
-.btn-success:hover{
-    background-color: darkgray;
 }
 .col-sm-12{
     padding: 0px;

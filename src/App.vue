@@ -1,18 +1,20 @@
 <template>
   <div id="app">
-    <LoginPage />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import LoginPage from './components/LoginPage.vue'
-import HomePage from './components/HomePage.vue'
+
+ // Set username and password
+  (function () {
+    localStorage.setItem('username', 'admin');
+    localStorage.setItem('password', 'admin');
+  })();
 
 export default {
   name: 'app',
   components: {
-    LoginPage,
-    HomePage
   }
 }
 </script>
@@ -24,6 +26,4 @@ export default {
 body {
     background-color: #eee;
   }
-
-
 </style>
