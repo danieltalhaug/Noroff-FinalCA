@@ -7,12 +7,13 @@
 </template>
 
 <script>
-import Footer from './Footer.vue'
-import Header from './Header.vue'
-import About from './About.vue'
-import Contact from './Contact.vue'
+import Footer from './FooterComponent.vue'
+import Header from './HeaderComponent.vue'
+import About from './AboutPage.vue'
+import Contact from './ContactPage.vue'
 
 export default {
+    name: 'HomePage',
     components: {
         Header,
         Footer,

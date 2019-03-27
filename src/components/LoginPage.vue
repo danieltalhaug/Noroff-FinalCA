@@ -2,29 +2,26 @@
   <div class="container-fluid">
     <div class="container">
       <div class="row row-height">
-        <div class="col"></div><!-- Fake column -->
-        <div class="col login-box">
-        <form>
-          <h3>{{message}}</h3>
-          <div class="form-group">
-            <label >Username</label>
-            <input type="text" class="form-control" placeholder="Username" v-model="username" v-bind:class="{ 'error-border': inputUsernameError }">
-            <span class="error" v-if="showUsernameError">Please enter a correct username</span><!-- Error text -->
-          </div>
-          <div class="form-group">
-            <label>Password</label>
-            <input type="text" class="form-control" placeholder="Password" v-model="password" v-bind:class="{ 'error-border': inputPasswordError }">
-            <span class="error" v-if="showPasswordError">Please enter a correct Password</span><!-- Error text -->
-          </div>
-          <div class="form-check">
-          </div>
-          <button type="button" v-on:click="login" class="btn btn-primary float-right">Submit</button>
-        </form><!-- Form end -->
-        </div><!-- Login column end -->
-        <div class="col"></div><!-- Fake column -->
-      </div><!-- Row end -->
-    </div><!-- Container end -->
-  </div><!-- Fluid-container end -->
+        <div class="col-md-4"></div><!-- Empty -->
+          <div class="col-md-4 login-box"> 
+            <form>
+              <div class="form-group">
+                <label>Email address</label>
+                <input type="text" class="form-control" placeholder="Username" v-model="username" v-bind:class="{ 'error-border': inputUsernameError }">
+                <span class="error" v-if="showUsernameError">Please enter a correct username</span>
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input type="text" class="form-control" placeholder="Password" v-model="password" v-bind:class="{ 'error-border': inputPasswordError }">
+                <span class="error" v-if="showPasswordError">Please enter a correct Password</span>
+              </div>
+              <button type="button" class="btn" v-on:click="login">Submit</button>
+            </form> <!-- Form -->
+          </div> <!-- Login box -->
+        <div class="col-md-4"></div><!-- Empty -->
+      </div> <!-- row -->
+    </div> <!-- Cotnainer -->
+  </div><!-- Container fluid -->
 </template>
 
 <script>
@@ -46,7 +43,7 @@
       inputPasswordError: false
     },
     methods: {
-      login: function(e) {
+      login: function() {
         if(this.username !== localStorage.getItem("username") || this.password !== localStorage.getItem("password")) {
           if(this.username !== localStorage.getItem("username")){
             this.message = 'Please enter correct login details';

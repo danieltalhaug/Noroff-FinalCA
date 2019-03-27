@@ -32,6 +32,7 @@
 
 <script>
 export default {
+    name: 'AboutPage',
     methods: {
         // Currently does not work
         collapseElement: function() {
