@@ -1,3 +1,4 @@
+// Imports
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
@@ -5,6 +6,7 @@ import HomePage from './components/HomePage.vue'
 import ContactPage from './components/ContactPage.vue'
 import AboutPage from './components/AboutPage.vue'
 import GameCardsPage from './components/GameCardsPage.vue'
+import CardSpecific from './components/CardSpecific.vue'
 Vue.use(VueRouter)
 
 Vue.config.productionTip = false
@@ -30,6 +32,11 @@ const router = new VueRouter({
       path: '/cards',
       name: 'cards',
       component: GameCardsPage
+    },
+    {
+      path: '/character',
+      name: 'character',
+      component: CardSpecific
     }
   ]
 })

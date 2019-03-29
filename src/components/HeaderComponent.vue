@@ -40,7 +40,6 @@ export default {
     background: rgb(17,18,23);
     background: linear-gradient(0deg, rgba(17,18,23,1) 0%, rgba(19,20,25,1) 100%);
     color: #ffffff;
-    margin-bottom: 30px;
     border-bottom: 1px solid #3e3f43;
     &__logo {
         font-size: 1.8em;

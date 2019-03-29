@@ -61,6 +61,7 @@ $border-radius: 5px;
 $error-red: #ff5b5b;
 // SCSS
 body {
-  background-color: #001845;
+  background-image: url('./../assets/cards-bg-4x5v2.png');
+  background-size: 400px auto;
 }
 </style>

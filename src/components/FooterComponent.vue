@@ -18,7 +18,6 @@ export default {
         text-align: center;
         padding: 50px 0 50px 0;
         color: white;
-        margin-top: 20px;
         border-top: 1px solid #3e3f43;
     }
 </style>

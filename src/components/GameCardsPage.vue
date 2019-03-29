@@ -1,22 +1,22 @@
 <template>
     <div>
         <HeaderComponent />
-        <div class="container">
-            <div class="row">
-                <div v-for="card in cards" v-bind:key="card">
-                    <GameCardsComponent v-bind:name="card.name"
-                                        v-bind:colors="card.colors"
-                                        v-bind:type="card.type"
-                                        v-bind:rarity="card.rarity"
-                                        v-bind:text="card.text"
-                                        v-bind:img="card.imageUrl"
-                                        v-bind:id="card.id"
-                    ></GameCardsComponent>
+            <div class="container">
+                <div class="row">
+                    <div v-for="card in cards" v-bind:key="card">
+                        <GameCardsComponent v-bind:name="card.name"
+                                            v-bind:colors="card.colors"
+                                            v-bind:type="card.type"
+                                            v-bind:rarity="card.rarity"
+                                            v-bind:text="card.text"
+                                            v-bind:img="card.imageUrl"
+                                            v-bind:id="card.id"
+                        ></GameCardsComponent>
+                    </div>
                 </div>
             </div>
-        </div>
         <FooterComponent />
-</div>
+    </div>
 </template>
 
 <script>
@@ -48,7 +48,8 @@ export default {
         .then(function(result) {
             app.cards = result.cards;
         })
-        .catch(err => console.log(err))
+        // .catch(err => console.log(err))
+        // removed for now because it gives an eslint error 
     }
 }
 </script>

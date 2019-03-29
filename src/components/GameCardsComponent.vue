@@ -4,7 +4,7 @@
             <h3 class="card__title">{{name}}</h3>
             <img v-if="img === 0" class="card__image" src="https://via.placeholder.com/223x310">
             <img v-else class="card__image" :src="img">
-            <a class="card__link card__link--blue" href="#">View more</a>
+            <router-link class="card__link card__link--blue" to="/character">View More</router-link>
         </div>
     </div>
 </template>
@@ -54,6 +54,9 @@ export default {
                 background-color: #0c8ed7;
                 color: white;
                 font-size: 1.2em;
+            }&:hover {
+                background-color: darken( #0c8ed7, 5% );
+                text-decoration: none;
             }
         }
     }

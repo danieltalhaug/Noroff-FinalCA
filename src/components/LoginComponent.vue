@@ -17,7 +17,7 @@
                 <span class="error" v-if="showPasswordError">Please enter a correct Password</span>
               </div>
               <button type="button" class="btn btn--blue pull-right" v-on:click="login">Submit</button>
-            </form> <!-- Form -->
+            </form><!-- Form -->
           </div> <!-- Login box -->
         <div class="col-md-4"></div><!-- Empty -->
       </div> <!-- row -->
@@ -77,6 +77,8 @@ $error-red: #ff5b5b;
         background-color: #0c8ed7;
         color: white;
         font-size: 1.2em;
+      }&:hover {
+        background-color: darken( #0c8ed7, 5% )
       }
     }
 </style>
