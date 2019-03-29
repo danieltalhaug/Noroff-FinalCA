@@ -18,7 +18,7 @@ export default {
     },
     data() {
         return {
-            message: 'Please log in',
+            message: 'Welcome, please log in',
             showUsernameError: false,
             showPasswordError: false,
             inputUsernameError: false,
@@ -47,7 +47,7 @@ export default {
           } else {
               const sessionID = '5421364445';
               sessionStorage.setItem('sessionID', sessionID);
-              this.$router.push({name: 'about'});
+              this.$router.push({name: 'cards'});
           }
       }
     }
@@ -60,6 +60,7 @@ $grey: #ced4da;
 $border-radius: 5px;
 $error-red: #ff5b5b;
 // SCSS
-
-
+body {
+  background-color: #001845;
+}
 </style>

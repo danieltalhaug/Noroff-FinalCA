@@ -4,6 +4,7 @@ import App from './App.vue'
 import HomePage from './components/HomePage.vue'
 import ContactPage from './components/ContactPage.vue'
 import AboutPage from './components/AboutPage.vue'
+import GameCardsPage from './components/GameCardsPage.vue'
 Vue.use(VueRouter)
 
 Vue.config.productionTip = false
@@ -24,6 +25,11 @@ const router = new VueRouter({
       path: '/contact',
       name: 'contact',
       component: ContactPage
+    },
+    {
+      path: '/cards',
+      name: 'cards',
+      component: GameCardsPage
     }
   ]
 })

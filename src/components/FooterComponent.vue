@@ -1,6 +1,6 @@
 <template>
-    <footer>
-        Copyright <i class="fa fa-copyright"></i> Noroff
+    <footer class="footer">
+        <p>Copyright <i class="fa fa-copyright"></i> Noroff</p>
     </footer>
 </template>
 
@@ -9,15 +9,16 @@ export default {
     name: 'FooterComponent'
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 // Variables
 
 // Scss
-    footer{
-        background-color: #3a99cd;
+    .footer{
+        background-color: #101116;
         text-align: center;
-        padding: 30px;
+        padding: 50px 0 50px 0;
         color: white;
-        margin-top: 30px;
+        margin-top: 20px;
+        border-top: 1px solid #3e3f43;
     }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header class="header">
         <nav class="navbar navbar-default">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -10,12 +10,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"> <h1><i class="fa fa-gamepad" aria-hidden="true"></i> Card Game</h1></a>
+                <a class="navbar-brand" href="/"><h1 class="header__logo">MAGIC: The Gathering</h1></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="">Home</a></li>
+                    <li><router-link to="/cards">Home</router-link></li>
                     <li><router-link to="/about">About</router-link></li>
                     <li><router-link to="/contact">Contact</router-link></li>
                 </ul>
@@ -30,86 +30,40 @@ export default {
 }
 </script>
 
-<style lang="scss">
-// Variables
-
+<style lang="scss" scoped>
 // Scss
-header{
+.header{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
     padding: 10px;
-    background-color: #3a99cd;
+    background: rgb(17,18,23);
+    background: linear-gradient(0deg, rgba(17,18,23,1) 0%, rgba(19,20,25,1) 100%);
     color: #ffffff;
     margin-bottom: 30px;
-}
-.navbar-default{
-    background-color: transparent;
-    border: none;
-    color: white;
-}
-header h1{
-    display: inline-block;
-    color: #ffffff;
-}
-header i{
-    display: inline-block;
-    font-size: 30px;
-    color: #ffffff;
+    border-bottom: 1px solid #3e3f43;
+    &__logo {
+        font-size: 1.8em;
+        color: rgba(255,255,255,0.8);
+        margin: 0px;
+        &:hover {
+            color: white;
+            transition: 0.2s;
+        }
+    }
 }
 .navbar-nav{
     float: right;
 }
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+.navbar-default{
     background-color: transparent;
-    color: #ffffff;
-    border-bottom: solid 3px white;
-
-}
-section{
-    min-height: 750px;
+    border: none;
 }
 .navbar-default .navbar-nav>li>a{
-    color: white;
-}
-input[type="text"]{
-    width: 100%;
-    border: solid 1px lightgrey;
-    height: 45px;
-    padding: 10px;
-    outline: none;
-}
-.m-t-30{
-    margin-top: 30px;
-}
-.relative{
-    position: relative;
-}
-.float-right{
-    float: right;
-}
-.card-container{
-    border: solid 1px lightgrey;
-    border-top: 10px solid #3a99cd;
-    margin-top: 30px;
-    margin-left: 5px;
-    padding: 15px;
-}
-.card-container:hover{
-        box-shadow: 5px 5px 2.5px #888888;
-        cursor: pointer;
-}
-.col-sm-12{
-    padding: 0px;
-}
-img{
-    border-radius: 10px;
-}
-h1{
-    margin: 0px;
-}
-h4{
-    color: #3a99cd;
-}
-.error{
-    color: red;
-    display: none;
+    color: rgba(255,255,255,0.8);
+ &:hover {
+     color: white;
+    transition: 0.2s;
+    }
 }
 </style>

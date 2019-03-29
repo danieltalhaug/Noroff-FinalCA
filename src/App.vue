@@ -19,11 +19,11 @@ export default {
 }
 </script>
 
-<style lang="scss">
-// Variables
-
-// SCSS
-body {
-    background-color: #eee;
-  }
+<style lang="scss" >
+* {
+  font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3, h4, {
+  font-family: 'Germania One', cursive;
+}
 </style>
