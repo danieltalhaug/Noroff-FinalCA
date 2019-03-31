@@ -45,8 +45,6 @@ export default {
                   this.inputPasswordError = false; 
               }
           } else {
-              const sessionID = '5421364445';
-              sessionStorage.setItem('sessionID', sessionID);
               this.$router.push({name: 'cards'});
           }
       }
@@ -61,7 +59,6 @@ $border-radius: 5px;
 $error-red: #ff5b5b;
 // SCSS
 body {
-  background-image: url('./../assets/cards-bg-4x5v2.png');
-  background-size: 400px auto;
+  background-color: #001741;
 }
 </style>

@@ -4,13 +4,13 @@
             <div class="row">
                 <div class="col-sm-3"></div><!-- Empty -->
                     <div class="col-sm-6">
-                        <CardSpecificComponent  v-bind:name="card.name"
-                                                v-bind:colors="card.colors"
-                                                v-bind:type="card.type"
-                                                v-bind:rarity="card.rarity"
-                                                v-bind:text="card.text"
-                                                v-bind:img="card.imageUrl"
-                                                v-bind:id="card.id"
+                        <CardSpecificComponent  v-bind:name="character.name"
+                                                v-bind:colors="character.colors"
+                                                v-bind:type="character.type"
+                                                v-bind:rarity="character.rarity"
+                                                v-bind:text="character.text"
+                                                v-bind:img="character.imageUrl"
+                                                v-bind:id="character.id"
                         />
                     </div>
                 <div class="col-sm-3"></div><!-- Empty -->
@@ -36,7 +36,7 @@ export default {
     ],
     data() {
         return {
-            cards: []
+            characters: []
         }
     },
     beforeMount: function() {
@@ -49,7 +49,7 @@ export default {
             return response.json();
         })
         .then(function(result) {
-            app.cards = result.cards;
+            app.characters = result.cards;
         })
         .catch(err => console.log(err))
     }

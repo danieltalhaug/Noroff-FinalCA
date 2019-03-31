@@ -2,8 +2,12 @@
     <div class="col-sm-4">
         <div class="card">
             <h3 class="card__title">{{name}}</h3>
-            <img v-if="img === 0" class="card__image" src="https://via.placeholder.com/223x310">
-            <img v-else class="card__image" :src="img">
+            <div v-if="img === undefined">
+                <img class="card__image" src="https://via.placeholder.com/223x310">
+            </div>
+            <div v-else>
+                <img class="card__image" :src="img">
+            </div>
             <router-link class="card__link card__link--blue" to="/character">View More</router-link>
         </div>
     </div>

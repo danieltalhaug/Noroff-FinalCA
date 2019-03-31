@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-sm-3"></div><!-- Empty -->
                     <div class="col-sm-6">
-                        <form>
+                        <form v-on:click.prevent>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">First name</label>
                                 <input type="text" class="form-control" placeholder="First name">
