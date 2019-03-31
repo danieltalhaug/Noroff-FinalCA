@@ -27,3 +27,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Logging in
+
+username and password is admin
